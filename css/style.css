@@ -4101,7 +4101,8 @@ h6 {
 }
 .service-area .solutions{
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+  grid-template-rows: repeat(2,minmax(300px,1fr));
   
 }
 .solution1{
@@ -4110,6 +4111,9 @@ h6 {
   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   justify-content: center;
   align-items: center;
+}
+.sol{
+  border: 1px solid red;
 }
 .heading_dashboard{
   color: black;
